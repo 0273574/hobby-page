@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,24 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/ab47c56c0a.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="kontakt.css">
+    <script src="https://kit.fontawesome.com/ab47c56c0a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="kontakt.css?v=1.2">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
+
 <body>
+    <div class="loader-wrapper">
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+    </div>
     <header>
         <div class="tlo"></div>
-        <div class="h2-siatkowka"><h2>SIATKÓWKA</h2></div>
+        <div class="h2-siatkowka">
+            <h2>SIATKÓWKA</h2>
+        </div>
         <div class="menu">
             <i class="fas fa-bars" onclick="openNav()"></i>
         </div>
@@ -30,11 +41,22 @@
     </header>
     <main>
         <div class="kontakt">
-        <h3>Zapraszam do kontaktu</h3>
-        <div class="visme_d" data-title="Business Contact Form" data-url="w4630me1-business-contact-form" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="64998"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
-    </main></div>
+            <h3>Zapraszam do kontaktu</h3>
+            <div class="visme_d" data-title="Business Contact Form" data-url="w4630me1-business-contact-form"
+                data-domain="forms" data-full-page="false" data-min-height="600px" data-form-id="64998"></div>
+            <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    </main>
+    </div>
     <footer>
         <p><b>Copyright &copy; Kacper Rusin</b></p>
     </footer>
+    <script>
+        $(window).on("load", function () {
+  setTimeout(function() {
+    $(".loader-wrapper").fadeOut("slow");
+  }, 3000); // Wait for 2 seconds before fading out (adjust as needed)
+});
+    </script>
 </body>
+
 </html>
