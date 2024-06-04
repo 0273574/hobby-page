@@ -1,3 +1,84 @@
+:root {
+    --zolty: #FEE610;
+    --granat: #2E339A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+}
+.menu{
+    display: none;
+}
+.h2-siatkowka{
+    color: var(--zolty);
+    font-size: 2em;
+    text-align: center;
+    background-color: var(--granat);
+    height: 20vh;
+
+}
+.tlo{
+    background-image: url(tlo.jpeg);
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.obrazek-1{
+    margin-left: 5%;
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    
+}
+.siatkarze{
+    margin-top: -40px;
+    height: 25%;
+    width: 95%;
+    gap: 10px;
+    
+}
+.tlo2{
+    background-color: var(--zolty);
+    height: 60vh;
+    margin-top: -82%;
+}
+.nav {
+    display: inline-flex;
+    align-items: center;
+    background-color: #212782;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    padding: 8px 8px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav ul li a:hover {
+    background-color: var(--zolty);
+    color: var(--granat);
+}
+footer{
+    background-color: #212782;
+    text-align: center;
+    padding: 10px;
+}
 @media screen and (max-width: 600px) {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
